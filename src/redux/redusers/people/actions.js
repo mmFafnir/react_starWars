@@ -1,0 +1,3 @@
+export const LOAD_USERS = 'LOAD_USERS'
+export const LOAD_USERS__SECCESS = 'LOAD_USERS__SECCESS'
+export const LOAD_USERS__FAILURE = 'LOAD_USERS__FAILURE'

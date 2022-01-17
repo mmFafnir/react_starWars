@@ -1,0 +1,107 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  min-height: 100vh;
+}
+h1{
+  color: #fff;
+  text-align: center;
+}
+
+.table {
+  display: table;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid black;
+}
+.table-cell a{
+  color: inherit;
+  text-decoration: none;
+}
+.table-cell a:hover{
+  text-decoration: underline;
+}
+.table-row:nth-child(even) {
+  background: lightblue;
+  color: #000
+}
+
+.search{
+ position: relative;
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+  margin-bottom: 40px;
+}
+
+.search input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.fa{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #07051a;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+}
+
+.search:hover{
+  width: 200px;
+  cursor: pointer;
+}
+
+.search:hover input{
+  display: block;
+}
+
+.search:hover .fa{
+  background: #07051a;
+  color: white;
+}
+
+.persone__desc{
+  padding: 0px 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.persone__desc p{
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.persone__desc span:first-child{
+  font-weight: 700;
+}
