@@ -9,11 +9,9 @@ const sageMiddleware = createSageMiddleware();
 
 const store = createStore(
     reducer,
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__(
-        applyMiddleware(
-            routerMiddleware(history),
-            sageMiddleware
-        )
+    applyMiddleware(
+        routerMiddleware(history),
+        sageMiddleware
     )
 );
 sageMiddleware.run(rootSaga)
